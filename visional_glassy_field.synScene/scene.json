@@ -1,0 +1,130 @@
+{
+	"CONTROLS" : 
+	[
+		{
+			"DEFAULT" : 2,
+			"DESCRIPTION" : "",
+			"MAX" : 5,
+			"MIN" : 1,
+			"NAME" : "View",
+			"TYPE" : "slider",
+			"UI_GROUP" : "Camera"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 5,
+			"MIN" : 1,
+			"NAME" : "Stretch",
+			"TYPE" : "slider",
+			"UI_GROUP" : "Camera"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 5,
+			"MIN" : 1,
+			"NAME" : "Lens",
+			"TYPE" : "slider",
+			"UI_GROUP" : "Camera"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 5,
+			"MIN" : 1,
+			"NAME" : "Glow",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 2,
+			"DESCRIPTION" : "",
+			"MAX" : 20,
+			"MIN" : 2,
+			"NAME" : "Fog",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 100,
+			"MIN" : 1,
+			"NAME" : "Outline",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 0,
+			"DESCRIPTION" : "",
+			"MAX" : 100,
+			"MIN" : 1,
+			"NAME" : "Vibrance",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 20,
+			"MIN" : 1,
+			"NAME" : "Whoah",
+			"PARAMS" : 0.01,
+			"TYPE" : "slider smooth",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 100,
+			"MIN" : 1,
+			"NAME" : "Electric_Color",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 100,
+			"MIN" : 0,
+			"NAME" : "Electric_Intensity",
+			"TYPE" : "slider",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 0,
+			"DESCRIPTION" : "",
+			"MAX" : 1,
+			"MIN" : 0,
+			"NAME" : "Open",
+			"TYPE" : "toggle",
+			"UI_GROUP" : "default"
+		}
+	],
+	"CREDIT" : "Visional",
+	"DESCRIPTION" : "A Synesthesia Live adaptation of Abstract Glassy Field, an abstract, blobby-looking field - rendered in the style of hot, glowing, fluid-filled glass. All produced using cheap low-budget pseudoscience.",
+	"GPU" : 0,
+	"HEIGHT" : 1080,
+	"IMAGES" : 
+	[
+		{
+			"NAME" : "image10",
+			"PATH" : "images/10.jpg"
+		},
+		{
+			"NAME" : "image47",
+			"PATH" : "images/47.jpg"
+		}
+	],
+	"IMAGE_PATH" : "visional_glassy_field.png",
+	"MEDIA" : 
+	[
+		{
+			"FILTER" : "linear",
+			"WRAP" : "repeat"
+		}
+	],
+	"TITLE" : "Visional Glassy Field",
+	"WIDTH" : 1920
+}
