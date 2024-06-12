@@ -3,7 +3,7 @@ Aspects of the scene have been adjusted to utilize many of the Synesthesia Shade
 
 Audio Reactive elements include movement based on the audio input's time. Bass Hits will affect shadows and the purple glow.
 
-Scene Controls have been added to allow the user to adjust parameters within the scene like glow, intensity, vibrance, camera parameters, and more.
+Scene controls allow the user to adjust parameters within the scene like glow, intensity, vibrance, camera parameters, and more.
 
 Demo video: https://www.youtube.com/watch?v=3HpyvFEv1yg
 
