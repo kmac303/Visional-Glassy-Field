@@ -1,7 +1,9 @@
-NOTE: To use this scene, import the synScene file into Synesthesia Live.
-
 Visional Glassy Field is a GLSL shader designed for Synesthesia Live, and is an adaptation of Abstract Glass Field created by Shane (Original GLSL: https://www.shadertoy.com/view/4ttGDH). 
 Aspects of the scene have been adjusted to utilize many of the Synesthesia Shader Format utilities to make the scene fully audio reactive.
+
+Demo video: https://www.youtube.com/watch?v=3HpyvFEv1yg
+
+NOTE: To use this scene, import the synScene file into Synesthesia Live.
 
 License: WTFPL, Author: Kevin McIntosh (Visional), found: https://github.com/kmac303
 
