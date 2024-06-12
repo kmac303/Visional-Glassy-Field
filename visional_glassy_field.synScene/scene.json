@@ -32,7 +32,7 @@
 			"DEFAULT" : 1,
 			"DESCRIPTION" : "",
 			"MAX" : 5,
-			"MIN" : 1,
+			"MIN" : 0,
 			"NAME" : "Glow",
 			"TYPE" : "slider",
 			"UI_GROUP" : "default"
@@ -56,10 +56,10 @@
 			"UI_GROUP" : "default"
 		},
 		{
-			"DEFAULT" : 0,
+			"DEFAULT" : 1,
 			"DESCRIPTION" : "",
 			"MAX" : 100,
-			"MIN" : 1,
+			"MIN" : 0,
 			"NAME" : "Vibrance",
 			"TYPE" : "slider",
 			"UI_GROUP" : "default"
@@ -78,7 +78,7 @@
 			"DEFAULT" : 1,
 			"DESCRIPTION" : "",
 			"MAX" : 100,
-			"MIN" : 1,
+			"MIN" : 0,
 			"NAME" : "Electric_Color",
 			"TYPE" : "slider",
 			"UI_GROUP" : "default"
@@ -86,7 +86,7 @@
 		{
 			"DEFAULT" : 1,
 			"DESCRIPTION" : "",
-			"MAX" : 100,
+			"MAX" : 50,
 			"MIN" : 0,
 			"NAME" : "Electric_Intensity",
 			"TYPE" : "slider",
@@ -99,6 +99,16 @@
 			"MIN" : 0,
 			"NAME" : "Open",
 			"TYPE" : "toggle",
+			"UI_GROUP" : "default"
+		},
+		{
+			"DEFAULT" : 1,
+			"DESCRIPTION" : "",
+			"MAX" : 5,
+			"MIN" : 0.05,
+			"NAME" : "Cam",
+			"PARAMS" : 0.01,
+			"TYPE" : "slider smooth",
 			"UI_GROUP" : "default"
 		}
 	],

@@ -1,28 +1,3 @@
-/* Visional Glassy Field is a GLSL shader designed for Synesthesia Live, and is an adaptation of Abstract Glass Field created by Shane (Original GLSL: https://www.shadertoy.com/view/4ttGDH). Aspects of the scene have been adjusted to utilize many of the Synesthesia Shader Format utilities to make the scene fully audio reactive.
-
-    License: WTFPL, Author: Kevin McIntosh (Visional), found: https://github.com/kmac303
-
-*/
-
-/*
-
-	Visional Glassy Field
-	---------------------
-
-	An abstract, blobby-looking field - rendered in the style of hot, glowing glass. It was 
-	produced using cheap low-budget psuedoscience. :)
-
-	The surface was constructed with a spherized sinusoidal function, of sorts. I like it, because 
-	it's very cheap to produce, mildly reminiscent of noise and allows a camera to pass through it 
-	without having to resort to trickery.
-
-	The fluid filled glass look is fake, but at least interesting to look at. Basically, it was
-	produced by indexing the reflected and refracted surface rays into a 3D tri-planar texture
-	lookup. By the way, I've tried the real thing on this particular surface - with multiple ray 
-	bounces and so forth - and to say it's slower is an understatement. :)
-
-*/
-
 #define FAR 50. // Far plane, or maximum distance.
 
 // float objID = 0.; // Object ID
@@ -55,10 +30,12 @@ vec3 tpl( sampler2D t, in vec3 p, in vec3 n ){
 vec3 camPath(float t){
   
     // return vec3(0, 0, t)*syn_BassTime*.01; // Straight path.
-    // return vec3(-sin(t/2.), sin(t/2.)*.5 + 1.57, t); // Windy path.
+    // return vec3(-sin(t/2.), sin(t/2.) + 1.57, t); // Windy path.
+        // return vec3(-sin(t/2.)*.1, sin(t/2.)*.05 + 1.57, t); // Windy path.
+
     
     float s = sin(t/24.)*cos(t/12.)*Whoah;
-    return vec3(s*12., 0., t);
+    return vec3(s*12, 0., t);
     
     float a = sin(t * 0.11);
     float b = cos(t * 0.14);
@@ -83,7 +60,7 @@ float map1(vec3 p){
     float PI = 3.14159265358979;
     p = cos(mod(p*.315*1.25 + sin(mod(p.zxy*.875*1.25, 2.*PI)), 2.*PI));
     
-    float n = length(p)*syn_Intensity; // Spherize. The result is some mutated, spherical blob-like shapes.
+    float n = length(p); // Spherize. The result is some mutated, spherical blob-like shapes.
 
     // It's an easy field to create, but not so great to hone in one. The "1.4" fudge factor
     // is there to get a little extra distance... Obtained by trial and error.
@@ -180,7 +157,7 @@ float sha(in vec3 ro, in vec3 rd, in float start, in float end, in float k){
 
     for (int i=0; i<maxIterationsShad; i++){
         float h = map(ro + rd*dist);
-        //shade = min(shade, k*h/dist);
+        // shade = min(shade, k*h/dist);
         shade = min(shade, smoothstep(0.0, 1.0, k*h/dist));
 
         dist += clamp(h, .01, .2);
@@ -243,7 +220,7 @@ vec4 renderMainImage() {
 	
 	// Camera Setup.
 // 	float minSpeed = abs(syn_Intensity); // minimum speed threshold
-    float speed =  1.;
+    float speed =  .75;
     // max(minSpeed, abs((syn_Intensity) * abs(syn_BassPresence)));
     
     // speed = max(abs(speed*3), abs(minSpeed));
